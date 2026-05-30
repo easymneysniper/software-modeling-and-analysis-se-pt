@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-05-28T00:00:00.000Z" version="24.7.17" type="device">
+  <diagram name="Page-1">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Data Warehouse - UML Database Notation (Star Schema)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="430" y="20" width="740" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_date" value="&lt;b&gt;dim_date&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; date_key&lt;br&gt;full_date&lt;br&gt;day_of_week&lt;br&gt;month&lt;br&gt;quarter&lt;br&gt;year&lt;br&gt;is_weekend&lt;br&gt;is_holiday" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="230" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_product" value="&lt;b&gt;dim_product&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; product_key&lt;br&gt;product_id&lt;br&gt;product_name&lt;br&gt;brand&lt;br&gt;category_name&lt;br&gt;subcategory_name&lt;br&gt;unit_of_measure&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="370" y="100" width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_customer" value="&lt;b&gt;dim_customer&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; customer_key&lt;br&gt;customer_id&lt;br&gt;user_id&lt;br&gt;customer_type&lt;br&gt;gender&lt;br&gt;age_group&lt;br&gt;city&lt;br&gt;region&lt;br&gt;registration_date&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="690" y="100" width="230" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_seller" value="&lt;b&gt;dim_seller&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; seller_key&lt;br&gt;user_id&lt;br&gt;seller_type&lt;br&gt;city&lt;br&gt;region&lt;br&gt;registration_date&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="100" width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_location" value="&lt;b&gt;dim_location&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; location_key&lt;br&gt;location_id&lt;br&gt;city&lt;br&gt;region&lt;br&gt;country&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="100" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_channel" value="&lt;b&gt;dim_channel&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; channel_key&lt;br&gt;channel_name&lt;br&gt;channel_type&lt;br&gt;description&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="360" width="230" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_ad_category" value="&lt;b&gt;dim_ad_category&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; ad_category_key&lt;br&gt;category_id&lt;br&gt;category_name&lt;br&gt;parent_category_name&lt;br&gt;category_level&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="690" width="230" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_payment_method" value="&lt;b&gt;dim_payment_method&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; payment_method_key&lt;br&gt;payment_method_name&lt;br&gt;payment_method_type&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="370" y="830" width="230" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_device" value="&lt;b&gt;dim_device&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; device_key&lt;br&gt;device_type&lt;br&gt;os&lt;br&gt;browser&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="830" width="230" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="fact_sales" value="&lt;b&gt;fact_sales&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; sales_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; date_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; product_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; customer_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; seller_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; location_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; channel_key&lt;br&gt;quantity_sold&lt;br&gt;unit_price&lt;br&gt;discount_amount&lt;br&gt;tax_amount&lt;br&gt;shipping_amount&lt;br&gt;total_amount&lt;br&gt;cost_amount" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="410" y="470" width="280" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="fact_ad_performance" value="&lt;b&gt;fact_ad_performance&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; ad_perf_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; date_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; ad_category_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; seller_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; location_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; channel_key&lt;br&gt;ads_count&lt;br&gt;impressions&lt;br&gt;clicks&lt;br&gt;inquiries&lt;br&gt;favorites&lt;br&gt;ctr_percent&lt;br&gt;inquiry_rate_percent" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="730" y="470" width="280" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="fact_user_activity" value="&lt;b&gt;fact_user_activity&lt;/b&gt;&lt;br&gt;&lt;b&gt;PK&lt;/b&gt; user_activity_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; date_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; customer_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; location_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; channel_key&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; device_key&lt;br&gt;logins&lt;br&gt;ad_views&lt;br&gt;searches&lt;br&gt;messages_sent&lt;br&gt;messages_received&lt;br&gt;profile_views&lt;br&gt;favorites_added" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="470" width="280" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="we1" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_date" target="fact_sales">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we2" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_product" target="fact_sales">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we3" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_customer" target="fact_sales">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we4" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_seller" target="fact_sales">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we5" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_location" target="fact_sales">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we6" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_channel" target="fact_sales">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we7" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_payment_method" target="fact_sales">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we8" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_date" target="fact_ad_performance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we9" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_ad_category" target="fact_ad_performance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we10" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_seller" target="fact_ad_performance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we11" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_location" target="fact_ad_performance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we12" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_channel" target="fact_ad_performance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we13" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_date" target="fact_user_activity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we14" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_customer" target="fact_user_activity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we15" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_location" target="fact_user_activity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we16" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_channel" target="fact_user_activity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="we17" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;strokeWidth=1.5;" edge="1" parent="1" source="dim_device" target="fact_user_activity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Blue: fact tables&lt;br&gt;Green: dimension tables&lt;br&gt;PK: primary key&lt;br&gt;FK: foreign key" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;verticalAlign=top;spacing=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="250" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
